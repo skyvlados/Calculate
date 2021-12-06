@@ -15,7 +15,7 @@ public class CalculateController {
     }
     @GetMapping
     public String answerHello() {
-        return calculateService.answerHello();
+        return "Добро пожаловать в кальтулятор";
     }
     @GetMapping("plus")
     public String plus(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
@@ -34,8 +34,7 @@ public class CalculateController {
     public String divide(@RequestParam("num1") float num1, @RequestParam("num2") float num2) {
         if(num2==0){
             return "Деление на нуль невозможно в этой программе!";
-        }else {
-            return num1+"/"+num2+"="+calculateService.divide(num1, num2);
         }
+        return num1+"/"+num2+"="+calculateService.divide(num1, num2);
     }
 }
