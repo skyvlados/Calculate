@@ -1,4 +1,4 @@
-package pro.sky.Calculate2;
+package pro.sky.calculate2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
